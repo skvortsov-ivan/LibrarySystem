@@ -30,6 +30,8 @@ namespace LibrarySystem.ConsoleUI
                 "CRUD-operations",
                 "Loan a book",
                 "Return a book",
+                "Search for a book",
+                "Show all active loans"
             };
 
             // Crud menu options 
@@ -137,7 +139,6 @@ namespace LibrarySystem.ConsoleUI
                             }
                         }
                         break;
-
                     // Loan a book
                     case 2:
                         Console.WriteLine("Press Enter to continue\n>");
@@ -145,6 +146,16 @@ namespace LibrarySystem.ConsoleUI
                         break;
                     // Return a book
                     case 3:
+                        Console.WriteLine("Press Enter to continue\n>");
+                        Console.ReadLine();
+                        break;
+                    //Search for a book"
+                    case 4:
+                        Console.WriteLine("Press Enter to continue\n>");
+                        Console.ReadLine();
+                        break;
+                    //Show all active loans"
+                    case 5:
                         Console.WriteLine("Press Enter to continue\n>");
                         Console.ReadLine();
                         break;
