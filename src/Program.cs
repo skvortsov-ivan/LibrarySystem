@@ -1,10 +1,12 @@
-﻿namespace LibrarySystem
+﻿using LibrarySystem.ConsoleUI;
+
+namespace LibrarySystem
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            LogInMenu.LogIn();
         }
     }
 }
