@@ -37,8 +37,8 @@ Before running the application, ensure you have the following installed:
 
 ## Setup & Installation  
 
-### 1. Navigate to the `LibrarySystem` project folder: `LibrarySystem/LibrarySystem`.  
-### 2. Create a `appsettings.json` file and include the following syntax. Afterwards change the "INSERTSERVERNAME" to the server name you use in SSMS.  
+1. Navigate to the `LibrarySystem` project folder: `LibrarySystem/LibrarySystem`.  
+2. Create a `appsettings.json` file and include the following syntax. Afterwards change the "INSERTSERVERNAME" to the server name you use in SSMS.  
 
    ```json
    {
@@ -55,7 +55,7 @@ Before running the application, ensure you have the following installed:
     }
    ```
 
-### 3 Open SSMS and create a new database with the name LibrarySystemDB  
+3. Open SSMS and create a new database with the name LibrarySystemDB  
 
 ## ER Diagram  
 The ER diagram provides an overview of the core entities in the system and how they relate to each other.  
@@ -74,24 +74,6 @@ This script contains all tables, primary keys, foreign keys, views, triggers, an
 You can find it here:  
 
 /FullScript/FullScript.sql 
-
-This file includes:
-
-    Table definitions (Books, Members, Loans, Library)
-
-    All constraints
-
-    Views used by the search functionality
-
-    Triggers for maintaining IsAvailable status
-
-    Stored procedures such as:
-
-        BorrowBook
-
-        ReturnBook
-
-        BorrowBookSlow (used for demonstrating that the same book can't be buried twice)
 
 How to Use the Script
 
