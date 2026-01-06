@@ -91,10 +91,10 @@ In the `BorrowBookSlow` procedure, a transaction is combined with row‑level lo
 To show concurrency and locking behavior:
 
 1. Open **two separate query windows** in SQL Server Management Studio (SSMS), both connected to the `LibrarySystemDB` database.
-2. Run the syntax below in the first window. This will execute the stored procedure BorrowBookSlow which will demonstrate transaction isolation. The result should be like in this picture [Competetive1](FullScript/Competetive1.png)
+2. Run the syntax below in the first window. This will execute the stored procedure BorrowBookSlow which will demonstrate transaction isolation. The result should be like in this picture [Picture1](FullScript/Competition1.png)
 
    ```sql
    EXEC BorrowBookSlow @BookId = 7, @MemberId = 1;
-3. Run the same command in the second window. The result should be like in this picture [Competetive2](FullScript/Competetive2.png).
-4. Running the same command in the second window will be blocked due to the locking behavior inside the procedure. When the procedure is finished running the result should be like in this picture [Competetive3](FullScript/Competetive3.png)
+3. Run the same command in the second window. The result should be like in this picture [Picture2](FullScript/Competition2.png).
+4. Running the same command in the second window will be blocked due to the locking behavior inside the procedure. When the procedure is finished running the result should be like in this picture [Picture3](FullScript/Competition3.png)
 
