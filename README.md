@@ -54,19 +54,7 @@ Before running the application, ensure you have the following installed:
     "AllowedHosts": "*"
     }
    ```
-
-3. Open SSMS and create a new database with the name LibrarySystemDB  
-
-## ER Diagram  
-The ER diagram provides an overview of the core entities in the system and how they relate to each other.  
-It illustrates the one‑to‑many relationships between Library–Book, Member–Loan, and Book–Loan, forming the foundation of the system’s data structure.  
-This visual model helps clarify how data flows through the application and ensures that the database design supports all required operations.  
-It also serves as a reference when implementing stored procedures, triggers, and constraints to maintain data integrity.
-
-You can find it here:
-[ER Diagram](docs/LibrarySystemERD.png)
-
-## Full Database Script
+3. Full Database Script implementation
 
 A complete SQL Server script for the entire database schema is included in this repository.  
 This script contains all tables, primary keys, foreign keys, views, triggers, and stored procedures used by the application.  
@@ -81,6 +69,16 @@ How to Use the Script:
 2. Connect to your SQL Server server.
 3. Open the file FullScript.sql .
 4. Execute the script.
+
+
+## ER Diagram  
+The ER diagram provides an overview of the core entities in the system and how they relate to each other.  
+It illustrates the one‑to‑many relationships between Library–Book, Member–Loan, and Book–Loan, forming the foundation of the system’s data structure.  
+This visual model helps clarify how data flows through the application and ensures that the database design supports all required operations.  
+It also serves as a reference when implementing stored procedures, triggers, and constraints to maintain data integrity.
+
+You can find it here:
+[ER Diagram](docs/LibrarySystemERD.png)
 
 ## Transaction Handling & Concurrency Control
 
