@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LibrarySystem.Services;
 
 namespace LibrarySystem.ConsoleUI
 {
@@ -30,8 +31,8 @@ namespace LibrarySystem.ConsoleUI
                 "CRUD-operations",
                 "Loan a book",
                 "Return a book",
-                "Search for a book",
-                "Show all active loans"
+                "Show all active loans",
+                "Search for a book"
             };
 
             // Crud menu options 
@@ -83,11 +84,11 @@ namespace LibrarySystem.ConsoleUI
 
                                     if (entity == EntityType.Member)
                                     {
-
+                                        MemberService.CreateMember();
                                     }
                                     else if (entity == EntityType.Book)
                                     {
-
+                                        BookService.CreateBook();
                                     }
                                     Console.WriteLine("Press Enter to continue\n>");
                                     Console.ReadKey();
@@ -98,11 +99,11 @@ namespace LibrarySystem.ConsoleUI
 
                                     if (entity == EntityType.Member)
                                     {
-
+                                        MemberService.ReadMembers();
                                     }
                                     else if (entity == EntityType.Book)
                                     {
-
+                                        BookService.ReadBooks();
                                     }
                                     Console.WriteLine("Press Enter to continue\n>");
                                     Console.ReadKey();
@@ -113,11 +114,11 @@ namespace LibrarySystem.ConsoleUI
 
                                     if (entity == EntityType.Member)
                                     {
-
+                                        MemberService.UpdateMember();
                                     }
                                     else if (entity == EntityType.Book)
                                     {
-
+                                        BookService.UpdateBook();
                                     }
                                     Console.WriteLine("Press Enter to continue\n>");
                                     Console.ReadKey();
@@ -127,11 +128,11 @@ namespace LibrarySystem.ConsoleUI
                                 case CrudAction.Delete:
                                     if (entity == EntityType.Member)
                                     {
-
+                                        MemberService.DeleteMember();
                                     }
                                     else if (entity == EntityType.Book)
                                     {
-
+                                        BookService.DeleteBook();
                                     }
                                     Console.WriteLine("Press Enter to continue\n>");
                                     Console.ReadKey();
@@ -141,21 +142,25 @@ namespace LibrarySystem.ConsoleUI
                         break;
                     // Loan a book
                     case 2:
+                        LoanService.BorrowBook();
                         Console.WriteLine("Press Enter to continue\n>");
                         Console.ReadLine();
                         break;
                     // Return a book
                     case 3:
-                        Console.WriteLine("Press Enter to continue\n>");
-                        Console.ReadLine();
-                        break;
-                    //Search for a book"
-                    case 4:
+                        LoanService.ReturnBook();
                         Console.WriteLine("Press Enter to continue\n>");
                         Console.ReadLine();
                         break;
                     //Show all active loans"
+                    case 4:
+                        LoanService.ShowActiveLoans();
+                        Console.WriteLine("Press Enter to continue\n>");
+                        Console.ReadLine();
+                        break;
+                    //Search for a book"
                     case 5:
+                        SearchService.SearchBooks();
                         Console.WriteLine("Press Enter to continue\n>");
                         Console.ReadLine();
                         break;
