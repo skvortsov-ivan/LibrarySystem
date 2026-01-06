@@ -61,7 +61,7 @@ Before running the application, ensure you have the following installed:
 # 3 Open SSMS and create a new database with the name LibrarySystemDB
 
 ## ER Diagram
-[ER Diagram](docs/LibrarySystemERD_picturev2.png)
+[ER Diagram](docs/LibrarySystemERD.png)
 Place your PNG file in the repository, either:
 
 - In the root folder  
