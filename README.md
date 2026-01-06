@@ -1,4 +1,4 @@
-# Library System – Operating via SQL Server and Visual Studio 2022
+# Library System – Student project in SSMS and Visual Studio
 
 This project is a console-based library system that manages books, members, and loans. This is a student project designed for the student to learn how to implement database first, scaffolding and many other basic operations such as views, procedures, triggers, indexing and more. 
 
@@ -35,12 +35,10 @@ Before running the application, ensure you have the following installed:
 
 ---
 
-## Setup & Installation
+## Setup & Installation  
 
-### 1. Database Configuration
-
-# 1. Navigate to the `LibrarySystem` project folder: `LibrarySystem/LibrarySystem`.
-# 2. Create a `appsettings.json` file and include the following syntax. Afterwards change the "INSERTSERVERNAME" to the server name you use in SSMS. 
+### 1. Navigate to the `LibrarySystem` project folder: `LibrarySystem/LibrarySystem`.  
+### 2. Create a `appsettings.json` file and include the following syntax. Afterwards change the "INSERTSERVERNAME" to the server name you use in SSMS.  
 
    ```json
    {
@@ -57,21 +55,10 @@ Before running the application, ensure you have the following installed:
     }
    ```
 
+# 3 Open SSMS and create a new database with the name LibrarySystemDB  
 
-# 3 Open SSMS and create a new database with the name LibrarySystemDB
-
-## ER Diagram
+## ER Diagram  
 [ER Diagram](docs/LibrarySystemERD.png)
-Place your PNG file in the repository, either:
 
-- In the root folder  
-- Or in a folder named `docs/`
-
-Then include it in the README like this:
-
-If the file is in `docs/`:
-
-```markdown
-![ER Diagram](docs/LibrarySystemERD.png)
 
 
