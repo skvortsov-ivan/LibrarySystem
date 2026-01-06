@@ -72,6 +72,6 @@ Then include it in the README like this:
 If the file is in `docs/`:
 
 ```markdown
-![ER Diagram](docs/LibrarySystemERD_picture_v2.png)
+![ER Diagram](docs/LibrarySystemERD.png)
 
 
