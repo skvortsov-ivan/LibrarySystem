@@ -75,22 +75,18 @@ You can find it here:
 
 /FullScript/FullScript.sql 
 
-How to Use the Script
+How to Use the Script:
 
-    Open SQL Server Management Studio (SSMS).
-
-    Connect to your SQL Server server.
-
-    Open the file FullScript.sql .
-
-    Execute the script.
+1. Open SQL Server Management Studio (SSMS).
+2. Connect to your SQL Server server.
+3. Open the file FullScript.sql .
+4. Execute the script.
 
 ## Transaction Handling & Concurrency Control
 
 To ensure data integrity and correct handling of simultaneous loan attempts, the system uses transactions inside its stored procedures. A transaction groups multiple SQL operations into a single unit of work, meaning everything is either committed together or fully rolled back if something goes wrong. This prevents the database from ending up in an inconsistent state.
 
 In the `BorrowBookSlow` procedure, a transaction is combined with row‑level locking (ROWLOCK, XLOCK) to simulate two members trying to borrow the same book at the same time. The first transaction locks the book and intentionally waits, while the second transaction becomes blocked until the lock is released. When the first transaction commits, the second one fails because the book is no longer available, demonstrating that SQL Server correctly handles concurrency and prevents double bookings.
-
 
 To show concurrency and locking behavior:
 
